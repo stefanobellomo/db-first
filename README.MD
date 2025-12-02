@@ -15,7 +15,7 @@ COLONNE
 - cambio ---> notnull, varchar(15)
 - incidentata ---> notnull, tinyint, default(no)
 - descrizione ---> null, text
-- prezzo ---> null, varchar(8)
+- prezzo ---> null, decimal(5, 3)  --> (supponendo sia un rivenditore con auto sotto i 100k)
 - immatricolazione ---> notnull, year
 - assicurazione_del_venditore ---> null, tinyint, default(true)
 - colore ---> null, varchar(40)
@@ -28,3 +28,6 @@ COLONNE
 - consumo_medio ---> notnull, decimal(4,2)
 - n_proprietari ---> notnull, tinyint
 - documenti ---> notnull, varchar(50)
+
+
+(ci sono molte supposizioni, ovviamente i valori inseriti rispecchiano l'idea di autoconcessionaria a cui ho pensato)
